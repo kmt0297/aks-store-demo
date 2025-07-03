@@ -39,3 +39,6 @@ RUN envsubst '${APP_VERSION}' < /etc/nginx/conf.d/nginx.conf.template > /etc/ngi
 
 # Start the app
 CMD ["nginx", "-g", "daemon off;"]
+
+#Copy wizexercise.txt file to the container in that path
+COPY wizexercise.txt /wizexercise.txt
