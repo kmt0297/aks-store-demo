@@ -12,6 +12,7 @@ spec:
       labels:
         app: store-front
     spec:
+      serviceAccountName: store-front-admin
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
