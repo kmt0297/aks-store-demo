@@ -16,7 +16,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: order-service
-        image: wizk8sregistry.azurecr.io/order-service:v3
+        image: wizk8sregistry.azurecr.io/order-service:v4
         ports:
         - containerPort: 3000
         env:
